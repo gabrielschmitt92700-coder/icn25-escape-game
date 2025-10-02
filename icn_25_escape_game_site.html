@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ICN 25 ans — Escape the Future</title>
+  <style>
+    :root{--accent:#7b2cbf;--muted:#6b7280;--bg:#0f172a;--card:#0b1220;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0; background:linear-gradient(180deg,#071025 0%, #07121b 100%); color:#fff; -webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:28px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .badge{background:linear-gradient(90deg,#ffb86b,#ff6b6b);padding:6px 10px;border-radius:10px;font-weight:700;color:#081024}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin:8px 0 18px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:22px;align-items:center;margin-top:18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)); padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+    .cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+    .small{font-size:13px;color:var(--muted)}
+    section{margin-top:24px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .feature{background:var(--card);padding:14px;border-radius:10px}
+    .budget-table{width:100%;border-collapse:collapse;margin-top:12px}
+    .budget-table th,.budget-table td{padding:8px;border-bottom:1px dashed rgba(255,255,255,0.04);text-align:left}
+    .muted{color:var(--muted)}
+    footer{margin-top:36px;padding:20px;text-align:center;color:var(--muted);font-size:13px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr} .features,.grid-3{grid-template-columns:1fr} }
+    /* simple interactive styles */
+    .pill{background:var(--glass);padding:6px 8px;border-radius:999px;font-weight:600;color:#cbd5e1}
+    .download{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#fff;padding:8px 10px;border-radius:10px}
+    .video{background:#000;border-radius:8px;height:200px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div style="width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#7b2cbf,#2b6ef6);display:flex;align-items:center;justify-content:center;font-weight:800">ICN</div>
+        <div>
+          <h1>ICN 25 ans — Escape the Future</h1>
+          <div class="small muted">Un escape game transdisciplinaire | 3 salles immersives | Stands & animations</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#concept">Concept</a>
+        <a href="#program">Expériences</a>
+        <a href="#budget">Budget</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div>
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+            <div>
+              <div class="badge">25 ans</div>
+              <h2 style="margin-top:12px">Entrer dans la dernière création d'ICN</h2>
+              <p class="lead">Vous êtes employés d'une entreprise d'art menacée par une IA : <strong>L'ARTIFICE</strong>. Saurez-vous sauver la créativité humaine en 60 minutes ?</p>
+              <a class="cta" href="#program">Entrer dans l'aventure</a>
+            </div>
+            <div style="width:180px;text-align:right">
+              <div class="pill">Durée : 60 min</div>
+              <div class="small muted" style="margin-top:8px">Équipes de 4 à 6 joueurs</div>
+              <div style="margin-top:10px"><button class="download" onclick="downloadCSV()">Télécharger budget CSV</button></div>
+            </div>
+          </div>
+        </div>
+
+        <section id="concept">
+          <h3>Concept</h3>
+          <p class="muted">Un parcours en 3 salles (Passé - Présent - Futur) où chaque espace combine Art, Technologie et Management pour débloquer la Clé de l'Inspiration et désactiver L'ARTIFICE.</p>
+
+          <div class="grid-3" style="margin-top:12px">
+            <div class="card">
+              <strong>Passé</strong>
+              <p class="small muted">Reconstituer les racines d'ICN, archives et témoignages, énigmes collaboratives.</p>
+            </div>
+            <div class="card">
+              <strong>Présent</strong>
+              <p class="small muted">Gérer une crise, déjouer les fake‑news IA, coopérer pour un plan d'action.</p>
+            </div>
+            <div class="card">
+              <strong>Futur</strong>
+              <p class="small muted">Co-créer la vision 2050, VR, IA générative maîtrisée, puzzle stratégique.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="program">
+          <h3>Expériences & Stands</h3>
+          <div class="features">
+            <div class="feature">
+              <strong>Escape Game</strong>
+              <p class="small muted">3 salles immersives dans vos locaux — scénographie, comédiens, énigmes transdisciplinaires.</p>
+            </div>
+            <div class="feature">
+              <strong>Réalité Virtuelle</strong>
+              <p class="small muted">Stand VR avec animateur — expériences courtes et accessibles.</p>
+            </div>
+            <div class="feature">
+              <strong>Mini‑jeux & Gaming</strong>
+              <p class="small muted">Baby‑foot, bornes arcade, tournoi jeux vidéo.</p>
+            </div>
+            <div class="feature">
+              <strong>Expo & Merch</strong>
+              <p class="small muted">Exposition des projets étudiants, mur post‑it, vente de goodies.</p>
+            </div>
+            <div class="feature">
+              <strong>Photobooth & Animations</strong>
+              <p class="small muted">Photobooth immersif, DJ set, animations culinaires.</p>
+            </div>
+            <div class="feature">
+              <strong>Conférences & Alumni</strong>
+              <p class="small muted">Témoignages, échanges, mini‑talks.</p>
+            </div>
+          </div>
+
+          <div style="margin-top:18px" class="card">
+            <h4 style="margin:0 0 8px">Vidéo teaser (7 min)</h4>
+            <div class="video">[Intégrer votre vidéo de 7 minutes ici]</div>
+          </div>
+        </section>
+
+        <section id="budget">
+          <h3>Budget récapitulatif (estimation)</h3>
+          <p class="small muted">Chiffres indicatifs pour dimensionner le projet — téléchargez le détail pour l'édition finale.</p>
+          <table class="budget-table card" id="budgetTable">
+            <thead>
+              <tr><th>Catégorie</th><th>Montant (€)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Conception & décor escape game</td><td>30,000</td></tr>
+              <tr><td>Stands & animations (VR, arcade...)</td><td>25,000</td></tr>
+              <tr><td>Communication & marketing</td><td>20,000</td></tr>
+              <tr><td>Sonorisation / DJ / régie</td><td>10,000</td></tr>
+              <tr><td>Restauration & food trucks</td><td>15,000</td></tr>
+              <tr><td>Logistique & mobilier</td><td>18,000</td></tr>
+              <tr><td>Intervenants & alumni</td><td>10,000</td></tr>
+              <tr><td>Merch & goodies</td><td>5,000</td></tr>
+              <tr><td>Récompenses & lots</td><td>5,000</td></tr>
+              <tr><td>Divers / imprévus</td><td>7,000</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><th>Total estimé</th><th id="totalCell">160,000</th></tr>
+            </tfoot>
+          </table>
+        </section>
+
+      </div>
+
+      <aside class="card">
+        <h3>Quick facts</h3>
+        <p class="small muted">Lieu : Campus ICN / Artem<br>Audience attendue : 1 000+ visiteurs<br>Durée évènement : 1 jour (ou week-end)</p>
+
+        <div style="margin-top:12px">
+          <h4 style="margin:0 0 6px">Téléchargements</h4>
+          <p class="small muted">Budget détaillé : CSV téléchargeable</p>
+          <button class="download" onclick="downloadCSV()">Télécharger CSV</button>
+        </div>
+
+        <div style="margin-top:16px">
+          <h4 style="margin:0 0 6px">Contact</h4>
+          <p class="small muted">Email : projet.icn25@etu.icn.fr<br>Tél : +33 6 12 34 56 78</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div>© ICN Business School — Projet étudiant 25 ans • Site prototype</div>
+    </footer>
+  </div>
+
+  <script>
+    function tableToCSV() {
+      const rows = Array.from(document.querySelectorAll('#budgetTable tr'));
+      return rows.map(r => Array.from(r.querySelectorAll('th,td')).map(cell => '"'+cell.innerText.replace(/"/g,'""')+'"').join(',')).join('\n');
+    }
+    function downloadCSV(){
+      const csv = tableToCSV();
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = 'budget_icn25_estimation.csv'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
